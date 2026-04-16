@@ -1,0 +1,34 @@
+1.
+    The reason the size of S1 is 5 when Zoey is only 4 characters is because a string needs a terminating null
+    character. So in reality the character array is 5 bytes in size.
+
+2.
+    even though the two arrays hold the same information they are not the same. The == operation is checking if
+    the arrays point to the same memory location and they do not so it is false.
+
+3.
+    The strcmp function returns 0 when a two strings have the same characters in the same order. S3 points to S1 and can
+    index through its information, same with S4 to S2, So because the strings for S3 and S4 are both Zoey it will return 0.
+
+4.
+    V is storing the difference between the next address of d and the current address of d, because d is an array of doubles
+    each index takes up 8 bytes, so the differnce between the current address and next address is 8. So V prints 8 8 8 8.
+    d[0] 500, d[1] 508, d[2] 516, d[3] 524, d[4] 532
+
+5.
+    p1 points to the first character of s4 or rather the s1 array. when changing P1 you change S1[0], so p1 = j; would make the string joey. the
+    character string S5 has a null character before the final index of the array. Even though there are characters after Zoey they wont get printed
+    because there is a null character before them.
+
+
+6.
+    The for loop stores numbers in q 5 through 25 at intervals of 5 so the array q would be {5,10,15,20,25} . then calls f and passes the value at q[1] and
+    and the pointer q[2], so that way only q[2] is changed to -3. so (q[1] +q[2])= 10-3  = 7. *(q[1] + q[2]) would be like saying *(7). This would not
+    compute the sum of two numbers and would be incorrect syntax because an integer is not a pointer.
+
+
+7.
+    The amount and location of free memory may change based on how many processes are running on odin. So from run to run there are different memory addresses
+    for the same pointers.
+    7 is stored in decimal digits 0-9
+    8 is stored in hexadecimal 0-f
